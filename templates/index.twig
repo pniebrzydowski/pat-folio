@@ -1,0 +1,13 @@
+{% extends '_layout' %}
+
+{% block body %}
+<div class="container">
+    <div class="content">
+        {{ entry.mainContent }}
+    </div>
+    {% set img = entry.photo.one() %}
+    {% if img %}
+    <img src="{{img.getUrl()}}" />
+    {% endif %}
+</div>
+{% endblock %}
