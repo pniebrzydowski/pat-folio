@@ -1,5 +1,7 @@
 /.env
 /.idea
 /vendor
+/node_modules
 .DS_Store
 /public_html/uploads
+/public_html/assets
