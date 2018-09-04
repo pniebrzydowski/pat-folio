@@ -32,13 +32,25 @@ a {
     }
 }
 
-.two-columns {
+@mixin col($x) {
+    $w: calc(100% * #{$x} / 12 - 20px);
+    width: $w;
+    flex: 0 0 $w;
+}
+.columns {
     display: flex;
     margin: 0 -10px;
+    justify-content: center;
 
-    & > div {
+    & > * {
         margin: 0 10px;
-        width: calc(50% - 20px);
-        flex: 0 0 calc(50% - 20px);
+        @include col(6);
     }
+
+    & > .col-2 { @include col(2); }
+    & > .col-3 { @include col(3); }
+    & > .col-4 { @include col(4); }
+    & > .col-8 { @include col(8); }
+    & > .col-9 { @include col(9); }
+    & > .col-10 { @include col(10); }
 }
