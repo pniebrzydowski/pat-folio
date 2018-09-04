@@ -1,5 +1,5 @@
 header nav {
-    background: black;
+    background: $color-primary;
 
     ul {
         display: flex;
@@ -15,7 +15,7 @@ header nav {
         color: white;
 
         &.active {
-            border-bottom: 4px red;
+            border-bottom: 4px $color-accent;
         }
     }
 }
