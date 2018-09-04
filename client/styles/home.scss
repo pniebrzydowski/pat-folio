@@ -32,3 +32,23 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+
+.projects {
+    margin-bottom: 30px;
+
+    .project-description {
+        padding: 15px;
+    }
+    article {
+        border: 1px solid lightgray;
+        border-radius: 8px;
+    }
+    img {
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        object-fit: cover;
+        object-position: top;
+        max-height: 200px;
+    }
+}
