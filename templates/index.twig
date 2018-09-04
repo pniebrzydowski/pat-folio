@@ -2,6 +2,12 @@
 
 {% block header %}
 <section class="banner">
+    {% set bannerImgs = entry.bannerImages.all() %}
+    <div class="bg-images">
+        {% for img in bannerImgs %}
+        <img src="{{img.getUrl()}}" />
+        {% endfor %}
+    </div>
     {% set img = entry.photo.one() %}
     {% if img %}
     <img src="{{img.getUrl()}}" />
@@ -11,8 +17,21 @@
 
 {% block body %}
 <section class="container">
-    <div class="main-content">
-        {{ entry.mainContent }}
+    <div class="content two-columns">
+        <div class="main-content">
+            {{ entry.mainContent }}
+        </div>
+        <div class="feature-content">
+            <ul class="feature-list">
+                {% set features = entry.featureBoxes.all() %}
+                {% for feature in features %}
+                <li>
+                    <h2>{{ feature.featureTitle }}</h2>
+                    {{ feature.text }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </section>
 {% endblock %}
