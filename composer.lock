@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e13eeb1d18d028842c4e1dbff1e489e5",
+    "content-hash": "721e99f50fd685bafe9c380b3c003e4a",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -944,6 +944,52 @@
                 "html"
             ],
             "time": "2018-02-23T01:58:20+00:00"
+        },
+        {
+            "name": "firstborn/migrationmanager",
+            "version": "3.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Firstborn/Craft-Migration-Manager.git",
+                "reference": "e03bfc14d762decb3480ebc468498a1fddf8b659"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Firstborn/Craft-Migration-Manager/zipball/e03bfc14d762decb3480ebc468498a1fddf8b659",
+                "reference": "e03bfc14d762decb3480ebc468498a1fddf8b659",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Migration Manager",
+                "handle": "migrationmanager",
+                "developer": "FirstBorn",
+                "developerUrl": "https://firstborn.com",
+                "class": "firstborn\\migrationmanager\\MigrationManager",
+                "hasCpSettings": false,
+                "hasCpSection": true,
+                "changelogUrl": "https://raw.githubusercontent.com/Firstborn/Craft-Migration-Manager/master/CHANGELOG.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "firstborn\\migrationmanager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Derrick Grigg",
+                    "email": "derrick.grigg@firstborn.com"
+                }
+            ],
+            "description": "Quickly create migrations for settings and content at the click of a mouse.",
+            "time": "2018-07-06T17:23:42+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
