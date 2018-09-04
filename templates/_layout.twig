@@ -11,7 +11,9 @@
 </head>
 
 <body>
-    {% block body %}
-    {% endblock body %}
+    <nav>{% block nav %}{% include 'includes/navigation.twig' %}{% endblock nav %}</nav>
+    <header>{% block header %}{% endblock header %}</header>
+    <main>{% block body %}{% endblock body %}</main>
+    <footer>{% block footer %}{% include 'includes/footer.twig' %}{% endblock footer %}</footer>
 </body>
 </html>
