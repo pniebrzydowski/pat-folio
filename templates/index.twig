@@ -1,13 +1,18 @@
 {% extends '_layout' %}
 
-{% block body %}
-<div class="container">
-    <div class="content">
-        {{ entry.mainContent }}
-    </div>
+{% block header %}
+<section class="banner">
     {% set img = entry.photo.one() %}
     {% if img %}
     <img src="{{img.getUrl()}}" />
     {% endif %}
-</div>
+</section>
+{% endblock header %}
+
+{% block body %}
+<section class="container">
+    <div class="main-content">
+        {{ entry.mainContent }}
+    </div>
+</section>
 {% endblock %}

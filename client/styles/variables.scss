@@ -1,4 +1,17 @@
 $color-primary: #000;
 
 
-$font-primary: 'Roboto', 'Verdana', 'Arial', sans-serif
+$font-primary: 'Roboto', 'Verdana', 'Arial', sans-serif;
+
+
+$screen-xs-max: 374px;
+$screen-sm-max: 567px;
+$screen-md-max: 767px;
+$screen-lg-max: 1023px;
+$screen-xl-max: 1199px;
+
+$screen-sm-min: $screen-xs-max + 1;
+$screen-md-min: $screen-sm-max + 1;
+$screen-lg-min: $screen-md-max + 1;
+$screen-xl-min: $screen-lg-max + 1;
+$screen-full-min: $screen-xl-max + 1;

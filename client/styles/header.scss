@@ -1,0 +1,22 @@
+.main-navigation {
+    background: black;
+    padding: 0;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        box-sizing: border-box;
+        color: white;
+
+        &.active {
+            border-bottom: 4px red;
+        }
+    }
+}

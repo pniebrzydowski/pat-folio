@@ -2,12 +2,21 @@ body, html {
     font-family: $font-primary;
 }
 
-.container {
-    display: flex;
-    align-items: flex-start;
+a {
+    cursor: pointer;
 }
 
-.container img {
-    width: 30%;
-    height: auto;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    width: 100%;
+
+    @media(min-width: $screen-full-min) {
+        width: 1200px;
+    }
 }
