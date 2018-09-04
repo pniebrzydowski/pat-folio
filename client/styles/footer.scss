@@ -1,0 +1,30 @@
+footer {
+    background: black;
+    padding: 0;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    address {
+        color: white;
+        padding: 20px;
+        line-height: 1.4;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        box-sizing: border-box;
+        color: white;
+    }
+}
