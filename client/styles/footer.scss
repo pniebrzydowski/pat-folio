@@ -12,6 +12,18 @@ footer {
         color: white;
         padding: 0 20px;
         line-height: 1.4;
+
+        a {
+            font-weight: normal;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
     }
 
     ul {
@@ -21,9 +33,7 @@ footer {
 
         a {
             display: block;
-            text-decoration: none;
             padding: 20px;
-            color: white;
     
             &:hover {
                 background: $color-secondary;
