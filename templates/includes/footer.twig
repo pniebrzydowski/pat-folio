@@ -5,13 +5,24 @@
             +43 664 79 82 97 3
         </address>
 
-        <ul class="social-menu">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Google +</a></li>
-        </ul>
+        <nav>
+            <ul class="social-menu">
+                {% if contact.linkedin %}
+                <li><a href="{{ contact.linkedin }}">LinkedIn</a></li>
+                {% endif %}
+                {% if contact.instagram %}
+                <li><a href="{{ contact.instagram }}">Instagram</a></li>
+                {% endif %}
+                {% if contact.facebook %}
+                <li><a href="{{ contact.facebook }}">Facebook</a></li>
+                {% endif %}
+                {% if contact.twitter %}
+                <li><a href="{{ contact.twitter }}">Twitter</a></li>
+                {% endif %}
+                {% if contact.google %}
+                <li><a href="{{ contact.google }}">Google +</a></li>
+                {% endif %}
+            </ul>
+        </nav>
     </div>
 </div>

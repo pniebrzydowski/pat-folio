@@ -10,7 +10,7 @@
     <link href="/assets/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body id="page-{{ entry.getSection().handle }}">
     <header>
         {% include 'includes/navigation.twig' %}
         {% block header %}{% endblock header %}    

@@ -4,10 +4,16 @@ body, html {
     flex-direction: column;
     min-height: 100vh;
     line-height: 1.6;
+    color: $color-text;
 }
 
 main {
     flex: 1 0 auto;
+
+    section:nth-child(even) {
+        background: $color-bg-light;
+        color: darken($color-text, 5%);
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,12 +22,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-size: 2em;
+    color: black;
 }
 section {
     h1 {
         text-align: center;
         font-size: 1.8em;
     }
+}
+h2, h3, h4, h5, h6 {
+    color: $color-secondary;
 }
 h2 {
     font-size: 1.4em;
@@ -64,7 +74,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    position: relative;
+    padding: 60px 0;
 
     &.no-padding {
         padding: 0;
@@ -80,17 +91,17 @@ a {
 }
 
 @mixin col($x) {
-    $w: calc(100% * #{$x} / 12 - 50px);
+    $w: calc(100% * #{$x} / 12 - 60px);
     width: $w;
     flex: 0 0 $w;
 }
 .columns {
     display: flex;
-    margin: 0 -25px;
+    margin: 0 -30px;
     justify-content: center;
 
     & > * {
-        margin: 0 25px;
+        margin: 0 30px;
         @include col(6);
     }
 
