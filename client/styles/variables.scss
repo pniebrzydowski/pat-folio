@@ -1,18 +1,19 @@
-$color-primary: #043;
-$color-secondary: #275;
-$color-accent: #143;
+$color-primary:     #043;
+$color-secondary:   #0dab76;
+$color-accent:      #ba1200; 
+$a: #0E6BA8;
 
-$color-text: #333;
-$color-bg-light: #f0f0f0;
+$color-text:        #333;
+$color-bg-light:    #f0f0f0;
 
-$font-primary: 'Abel', 'Verdana', 'Arial', sans-serif;
+$font-primary:      'Abel', 'Verdana', 'Arial', sans-serif;
 
 
-$screen-xs-max: 374px;
-$screen-sm-max: 567px;
-$screen-md-max: 767px;
-$screen-lg-max: 1023px;
-$screen-xl-max: 1199px;
+$screen-xs-max:     374px;
+$screen-sm-max:     567px;
+$screen-md-max:     767px;
+$screen-lg-max:     1023px;
+$screen-xl-max:     1199px;
 
 $screen-sm-min: $screen-xs-max + 1;
 $screen-md-min: $screen-sm-max + 1;

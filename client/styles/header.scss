@@ -4,7 +4,6 @@ header .container {
 
 .main-navigation {
     font-size: 1.1em;
-    font-weight: bold;
     display: flex;
     justify-content: space-between;
 
@@ -22,7 +21,9 @@ header .container {
         color: white;
 
         &.active {
-            border-bottom: 4px $color-accent;
+            background: white;
+            color: $color-secondary;
+            box-shadow: 0 0 5px;
         }
     }
 }
