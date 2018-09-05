@@ -20,6 +20,10 @@ header .container {
         box-sizing: border-box;
         color: white;
 
+        &:hover {
+            background: $color-secondary;
+        }
+
         &.active {
             background: white;
             color: $color-secondary;

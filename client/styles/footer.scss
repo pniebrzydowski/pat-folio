@@ -10,7 +10,7 @@ footer {
 
     address {
         color: white;
-        padding: 20px;
+        padding: 0 20px;
         line-height: 1.4;
     }
 
@@ -18,13 +18,16 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
 
-    a {
-        display: block;
-        text-decoration: none;
-        padding: 20px;
-        box-sizing: border-box;
-        color: white;
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+    
+            &:hover {
+                background: $color-secondary;
+            }
+        }
     }
 }
