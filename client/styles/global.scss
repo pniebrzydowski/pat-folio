@@ -97,8 +97,12 @@ a {
     width: 100%;
     padding: 0 20px;
 
+    @media(min-width: $screen-md-min) {
+        padding: 0 25px;
+    }
+
     @media(min-width: $screen-full-min) {
-        width: 1200px;
+        width: 1160px;
     }
 }
 
