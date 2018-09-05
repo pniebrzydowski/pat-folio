@@ -1,10 +1,10 @@
 <section class="container no-padding">
     <nav class="main-navigation content">
         <ul>
-            <li><a class="active" href="/" title="Home">Home</a></li>
-            <li><a href="/projects" title="Projects">Projects</a></li>
-            <li><a href="/cv" title="CV">CV</a></li>
-            <li><a href="/about" title="About">About</a></li>
+            <li><a {% if entry.getSection().handle == "home" %} class="active" {% endif %} href="/" title="Home">Home</a></li>
+            <li><a {% if entry.getSection().handle == "projects" %} class="active" {% endif %} href="/projects" title="Projects">Projects</a></li>
+            <li><a {% if entry.getSection().handle == "cv" %} class="active" {% endif %} href="/cv" title="CV">CV</a></li>
+            <li><a {% if entry.getSection().handle == "about" %} class="active" {% endif %} href="/about" title="About">About</a></li>
         </ul>
 
         <ul>
