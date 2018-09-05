@@ -82,7 +82,11 @@ a {
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 60px 0;
+    padding: 40px 0;
+
+    @media(min-width: $screen-md-min) {
+        padding: 60px 0;
+    }
 
     &.no-padding {
         padding: 0;
@@ -91,31 +95,27 @@ a {
 
 .content {
     width: 100%;
+    padding: 0 20px;
 
     @media(min-width: $screen-full-min) {
         width: 1200px;
     }
 }
 
-@mixin col($x) {
-    $w: calc(100% * #{$x} / 12 - 60px);
-    width: $w;
-    flex: 0 0 $w;
-}
 .columns {
     display: flex;
-    margin: 0 -30px;
+    margin: 0 -15px;
+    flex-wrap: wrap;
     justify-content: center;
-
-    & > * {
-        margin: 0 30px;
-        @include col(6);
+    @media(min-width: $screen-md-min) {
+        margin: 0 -25px;
     }
 
-    & > .col-2 { @include col(2); }
-    & > .col-3 { @include col(3); }
-    & > .col-4 { @include col(4); }
-    & > .col-8 { @include col(8); }
-    & > .col-9 { @include col(9); }
-    & > .col-10 { @include col(10); }
+    & > * {
+        margin: 0 15px;
+
+        @media(min-width: $screen-md-min) {
+            margin: 0 25px;
+        }
+    }
 }

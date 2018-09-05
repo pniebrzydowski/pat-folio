@@ -2,16 +2,26 @@ footer {
     background: $color-primary;
     padding: 0;
 
-    .content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    @media(min-width: $screen-md-min) {
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }    
     }
 
     address {
         color: white;
-        padding: 0 20px;
         line-height: 1.4;
+
+        @media(max-width: $screen-sm-max) {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        @media(min-width: $screen-md-min) {
+            padding: 0 20px;
+        }
 
         a {
             font-weight: normal;
@@ -29,11 +39,18 @@ footer {
     ul {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        @media(min-width: $screen-md-min) {
+            justify-content: space-between;
+        }
 
         a {
             display: block;
-            padding: 20px;
+            padding: 10px 20px;
+
+            @media(min-width: $screen-md-min) {
+                padding: 20px;
+            }
     
             &:hover {
                 background: $color-secondary;

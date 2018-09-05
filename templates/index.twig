@@ -10,7 +10,9 @@
     </div>
     {% set img = entry.photo.one() %}
     {% if img %}
-    <img src="{{img.getUrl()}}" />
+    <div class="photo-wrapper">
+        <img src="{{img.getUrl()}}" />
+    </div>
     {% endif %}
 </section>
 {% endblock header %}
@@ -18,10 +20,10 @@
 {% block body %}
 <section class="container">
     <div class="content columns">
-        <div class="main-content col-4">
+        <div class="main-content">
             {{ entry.mainContent }}
         </div>
-        <div class="feature-content col-8">
+        <div class="feature-content">
             <ul class="feature-list">
                 {% set features = entry.featureBoxes.all() %}
                 {% for feature in features %}
@@ -41,7 +43,7 @@
         <div class="columns projects">
             {% set projects = entry.projects.all() %}
             {% for project in projects %}
-            <article class="col-4">
+            <article>
                 {% set featureImage = project.screenshots.one() %}
                 {% if featureImage %}
                 <img src="{{featureImage.getUrl()}}" />
@@ -55,13 +57,11 @@
             {% endfor %}
         </div>
 
-        <div class="columns">
-            <div class="col-6">
+        <div class="project-text columns">
+            <div>
                 {{ entry.projectText }}
             </div>
-            <div class="col-2">
-                <a class="cta" href="/projects">More Projects</a>
-            </div>
+            <a class="cta" href="/projects">More Projects</a>
         </div>
     </div>
 </section>

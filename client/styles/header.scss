@@ -1,32 +1,42 @@
-header .container {
-    background: $color-primary;
-}
-
 .main-navigation {
-    font-size: 1.1em;
-    display: flex;
-    justify-content: space-between;
+    background: $color-primary;
 
-    ul {
+    .content {
+        font-size: 1.1em;
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
+        justify-content: center;
 
-    a {
-        display: block;
-        text-decoration: none;
-        padding: 20px;
-        box-sizing: border-box;
-        color: white;
-
-        &:hover {
-            background: $color-secondary;
+        @media(min-width: $screen-md-min) {
+            justify-content: space-between;
         }
 
-        &.active {
-            background: white;
-            color: $color-secondary;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            @media(max-width: $screen-sm-max) {
+                &:last-of-type {
+                    display: none;
+                }
+            }
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 20px;
+            box-sizing: border-box;
+            color: white;
+
+            &:hover {
+                background: $color-secondary;
+            }
+
+            &.active {
+                background: white;
+                color: $color-secondary;
+            }
         }
     }
 }
