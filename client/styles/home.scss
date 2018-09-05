@@ -107,7 +107,7 @@
     grid-gap: 20px;
     text-align: center;
 
-    @media(min-width: $screen-sm-min) {
+    @media(min-width: $screen-md-min) {
         grid-gap: 30px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
